@@ -1,0 +1,29 @@
+"ID","Name","Hint"
+"1","SQL Online","for Data Science"
+"2","Chart","LINE-SELECT name, cos(id), sin(id) FROM demo;"
+"3","Short CODE","s* tableName => SELECT * FROM tableName
+sf tableName => SELECT columns FROM tableName
+sl tableName => SELECT * FROM tableName ORDER BY key DESC LIMIT 100;
+ct => CREATE TABLE
+ii tableName => INSERT INTO
+us tableName => UPDATE SET
+uw tableName => UPDATE SET WHERE
+df tableName => DELETE FROM
+dw tableName => DELETE FROM WHERE"
+"4","SqLite 3.33.0","SQL OnLine on JavaScript"
+"5","MultiVersion","3.28.0 to Last (load on settings)"
+"6","[RightClick] mouse","Opens many additional features"
+"7","Left-Panel, Table","[RightClick] mouse ""Context menu"" or [DbClick]"
+"8","Tabs","mouse: [RightClick] , [MiddleClick] , [Wheel] , [LeftClick]"
+"9","SQL Editor","autocomplete: [Ctrl-Space] or [Alt-Space]; run: [Shift-Enter]"
+"10","Size table","Fast scroll million rows"
+"11","Share","Create public link DB"
+"12","ai.Url","https://twitter.com/SqliteOnlineCom"
+"13","ai.Color","#9393ad"
+"14","ai.Image","Blob - png, jpg, gif or String(base64) [DbClick] row"
+"15","SQL","Syntax example library"
+"16","CREATE","CREATE TABLE table_name (col1, col2)"
+"17","SELECT","SELECT * FROM table_name"
+"18","INSERT","INSERT INTO table_name (col1, col2) VALUES (""example"",""test"")"
+"19","UPDATE","UPDATE table_name SET col1=""work"" WHERE col2=""test"""
+"20","DELETE","DELETE FROM table_name"

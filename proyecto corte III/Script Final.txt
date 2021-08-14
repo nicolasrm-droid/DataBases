@@ -1,0 +1,149 @@
+CREATE TABLE Asesor(
+   IDAsesor     INTEGER  NOT NULL PRIMARY KEY 
+  ,Nombre       VARCHAR(19) NOT NULL
+  ,Apellido     VARCHAR(17) NOT NULL
+  ,Especialidad VARCHAR(11) NOT NULL
+);
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (1352,'Cuauhthemoc','Remesal Elorregui','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (1916,'Denia','Lallera Antezana','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (5202,'Lidia','Villarias Sorriva','Bmx');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6129,'Giraly','Ceballo Ferrer','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (2463,'Odessa','Fole Rioz','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6273,'Geobel','Monzon Suso','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6636,'Susan Lizaur','Cañon','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (4491,'Kerim Cruzado','Aramburu','Bmx');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (5747,'Nicolasa','Coria Hontoria','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (3521,'Salomé','Grado Moral','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (4731,'Ibor Liquiñano','Rasines','Bmx');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (8887,'Erik Lordaliego','Ribero','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6593,'Sabas Zubizarrieta','Langayo','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (5446,'Rony','Frera Cacho','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (8834,'Marielisse','Zugasti Escarza','Bmx');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6658,'Viannette','Guzman Viñales','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (3819,'Oswaldo','Sancibrao Hortiz','Bmx');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (3852,'Mía','Mamed Cambas','Montañismo');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (9566,'Dámaso','Haedo Viz','Ruta');
+INSERT INTO Asesor(IDAsesor,Nombre,Apellido,Especialidad) VALUES (6734,'Yunarqui','Taranco','Bmx');
+
+----------------------------------------------------------------------------------------------------------------------
+CREATE TABLE Usuario(
+   ID           INTEGER  NOT NULL PRIMARY KEY 
+  ,Nombre       VARCHAR(23) NOT NULL
+  ,Apellido     VARCHAR(19) NOT NULL
+  ,NoDeTelefono INTEGER  NOT NULL
+);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (403485,'Zoe','Guezmes Valgrande',7670071820);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (122199,'Efraín','Portas Cobreros',8818617422);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (462565,'Almudena','orihuela Paderniga',6825291286);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (740686,'Natali','Bustillo Ural',7602345228);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (646812,'Inés','Arnao Caneiro',895202359);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (825356,'Malí','Tabliega Guiral',6962490422);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (492969,'Bruk','Amirola Encio',7188309817);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (811050,'Yulma','Paratorrecilla Leal',6916412896);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (654427,'Ximena','Herces Soria',8413905763);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (238164,'Nadia','Cabaña Alaez',7634830371);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (709323,'Oralia','Asenjo',7714626123);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (883377,'Yamile','Gao Juara',7460655779);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (727079,'Edilma','-',8457767754);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (491559,'Wiliwaldo','Aldaeta Heyros',7763253657);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (311936,'Aneliesse','Montalban Acosta',716848052);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (668454,'Ivette','Antia Cardeiro',8644443542);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (230786,'Everlides','Cascallana Galdamez',7898671631);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (250004,'Ibire Romero Sierra','-',8873731530);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (113234,'Vislan Calera Perlacia','-',7355231505);
+INSERT INTO Usuario(ID,Nombre,Apellido,NoDeTelefono) VALUES (588459,'Lorena Santotis Raireta','-',6539549440);
+
+--------------------------------------------------------------------	--------------------------------------------------
+
+CREATE TABLE Bicicleta(
+   IDMarco            INTEGER  NOT NULL
+  ,IDAsesor           INTEGER  NOT NULL
+  ,IDUsuarioComprador INTEGER  NOT NULL
+  ,IDUsuarioVendedor  INTEGER  NOT NULL
+  ,NoDeExistencias    INTEGER  NOT NULL
+  ,Precio             INTEGER  NOT NULL
+  ,Grupo              VARCHAR(14) NOT NULL
+  ,Marca              VARCHAR(14) NOT NULL
+  ,Talla              VARCHAR(2) NOT NULL
+  ,MaterialMarco      VARCHAR(9) NOT NULL
+  ,Color              VARCHAR(9) NOT NULL
+  ,Tipo               VARCHAR(7) NOT NULL
+  ,Genero             VARCHAR(1) NOT NULL
+  ,TipoDeFreno        VARCHAR(11) NOT NULL
+  ,Estado             VARCHAR(5) NOT NULL
+  ,FechaCompra        DATE  NOT NULL
+  ,MontoCompra        INTEGER  NOT NULL
+  ,FechaVenta         DATE  NOT NULL
+  ,MontoVenta         INTEGER  NOT NULL
+  ,PRIMARY KEY(IDMarco)
+, FOREIGN KEY(IDAsesor) references Asesor          
+);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (6045,1352,85180,67962,9,6879567,'ShimanoAltus','Specialized','S','Titanio','Amarillo','MTB','F','Hidraulico','Nueva','44103',6879567,'44103',6879567);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (5421,1916,42699,15927,4,17779859,'ShimanoAcera','Scott','M','Aluminio','Rojo','MTB','M','Mecanico','Usada','44066',17779859,'44066',17779859);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (3050,5202,44751,51806,9,15319726,'ShimanoAlivo','Trek','L','Carbono','Naraja','MTB','F','V-Brake','Nueva','44068',15319726,'44068',15319726);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (4995,6129,82044,40059,8,4518705,'ShimanoDeore','Giant','XS','Acero','Azul','MTB','M','Mecanico','Nueva','43936',4518705,'43936',4518705);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (2227,2463,81481,71275,6,18725537,'ShimanoSLX','Canyon','XL','Titanio','Verde','MTB','M','V-Brake','Nueva','43875',18725537,'43875',18725537);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (8442,6273,88904,33341,10,15872267,'ShimanoXtr','Cannondale','M','Aluminio','Gris','MTB','F','Hidraulico','Usada','43839',15872267,'43839',15872267);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (5299,6636,29681,59322,5,12895072,'ShimanoClaris','Orbea','L','Acero','Negro','MTB','M','Mecanico','Usada','43880',12895072,'43880',12895072);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (3060,4491,66500,31346,10,15101545,'ShimanoSora','BMC','XS','Titanio','Blanco','RUTA','M','V-Brake','Usada','43902',15101545,'43902',15101545);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (2526,5747,46864,65817,10,12033620,'ShimanoTiagra','Pinarello','S','Aluminio','Azul','RUTA','M','Mecanico','Usada','44175',12033620,'44175',12033620);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (8601,3521,26841,53731,6,12157957,'Shimano105','Bianchi','M','Carbono','Verde','RUTA','F','Hidraulico','Nueva','43894',12157957,'43894',12157957);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (5597,4731,59565,23036,7,4304026,'ShimanoUltegra','S-Works','L','Acero','Gris','RUTA','M','Mecanico','Usada','44026',4304026,'44026',4304026);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (4127,8887,33638,13356,3,18027312,'ShimanoDuraAce','Look','M','Acero','Negro','RUTA','M','V-Brake','Nueva','43992',18027312,'43992',18027312);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (2665,6593,36343,76820,1,15575944,'PiñonFijo','WeThePeople','L','Titanio','Gris','BMX','M','ContraPedal','Nueva','43892',15575944,'43892',15575944);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (7574,5446,43825,58750,4,2557803,'PiñonFijo','Haro','XS','Aluminio','Verde','FIXIE','F','ContraPedal','Nueva','44192',2557803,'44192',2557803);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (7337,8834,83790,40614,5,11440587,'PiñonLibre','DiamondBack','S','Acero','Rojo','BMX','M','-','Nueva','44005',11440587,'44005',11440587);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (3359,6658,29843,11867,1,6817098,'PiñonLibre','Dk','M','Titanio','Naraja','BMX','F','-','Usada','44049',6817098,'44049',6817098);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (5587,3819,43669,53875,7,9162518,'ShimanoGrx','PinnacleArkose','XL','Carbono','Azul','GRAVEL','M','V-Brake','Usada','43968',9162518,'43968',9162518);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (8385,3852,19864,65550,7,2048880,'ShimanoGrx','BombTrack','M','Acero','Verde','GRAVEL','M','Hidraulico','Usada','44148',2048880,'44148',2048880);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (4291,9566,62801,45353,3,3745107,'ShimanoGrx','AlliedAble','L','Titanio','Gris','GRAVEL','M','Mecanico','Nueva','44146',3745107,'44146',3745107);
+INSERT INTO Bicicleta(IDMarco,IDAsesor,IDUsuarioComprador,IDUsuarioVendedor,NoDeExistencias,Precio,Grupo,Marca,Talla,MaterialMarco,Color,Tipo,Genero,TipoDeFreno,Estado,FechaCompra,MontoCompra,FechaVenta,MontoVenta) VALUES (6878,6734,13132,56484,9,6516822,'ShimanoGrx','KonaSultraLTD','XS','Aluminio','Negro','GRAVEL','F','Hidraulico','Usada','44046',6516822,'44046',6516822);
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- 1 ver que bicicletas son de material Titanio--
+SELECT* 
+From Bicicleta
+WHERE materialmarco= 'Titanio';
+
+-- 2 averiguar cuantas bicicletas son talla s--
+SELECT*
+from Bicicleta
+WHERE talla = 'S';
+
+--3 averiguar cuantas bicicletas  talla s son de aluminio --
+SELECT*
+from Bicicleta
+WHERE talla = 'S'
+and materialmarco= 'Aluminio';
+
+-- 4 busacar en la base de datos los asesores que son especialistas en montañismo--
+SELECT*
+FROM Asesor
+where especialidad ='Montañismo';
+
+--5 buscar en la base de datos un asesor que su nombre comience por c--
+select nombre
+from Asesor
+where nombre like 'C%' ;
+
+-- 6 natural join entre Usuario y bicicleta--
+SELECT*
+FROM Usuario
+NATURAL JOIN Bicicleta;
+
+-- 7 buscar en la base de datos marcas distintas a 'Trek','Scott' --
+SELECT DISTINCT marca
+from Bicicleta
+WHERE marca not in ('Trek','Scott');
+
+-- 8 buscar en la base de datos marcas distintas a 'Trek','Scott' pero que sean de genero femenino--
+SELECT DISTINCT marca, genero
+from Bicicleta
+WHERE marca not in ('Trek','Scott')
+and genero = 'F';
+
+-- 9 buscar en la base de datos hacer un left outer join entre la tabla Asesor y bicicleta--
+SELECT idmarco, Bicicleta.IDAsesor,especialidad
+from Bicicleta
+LEFT outer join Asesor
+on Bicicleta.IDAsesor=Asesor.idasesor;
+
